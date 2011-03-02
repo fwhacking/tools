@@ -51,7 +51,7 @@ static int decompress(char *buf, int len, char *outbuf, int outbuf_len)
 #define MAXSIZE (1024*1024)
 int main(int argc, char **argv)
 {
-	int infd, outfd, offset, num;
+	int infd, outfd, offset, endoffset, num;
 	char *inbuf, *outbuf;
 	struct stat st;
 
